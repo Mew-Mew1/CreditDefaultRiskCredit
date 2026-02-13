@@ -31,7 +31,7 @@ def load_data(filepath):
 def train_models():
     try:
         logger.info("Starting model training pipeline...")
-        X, y = load_data('data/processed/credit_data.csv')
+        X, y = load_data('data/raw_csv/default_of_credit_card_clients.csv')
         
         logger.info("Splitting data into train and test sets...")
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)

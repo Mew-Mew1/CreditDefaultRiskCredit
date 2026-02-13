@@ -1,0 +1,253 @@
+2026-02-14 01:21:42,265 - __main__ - INFO - Starting model training pipeline...
+2026-02-14 01:21:42,266 - __main__ - INFO - Loading data from data/processed/credit_data.csv...
+2026-02-14 01:21:42,269 - __main__ - ERROR - Data file not found at data/processed/credit_data.csv. Please ensure the data is downloaded and processed.
+2026-02-14 01:21:42,270 - __main__ - CRITICAL - Training pipeline failed: [Errno 2] No such file or directory: 'data/processed/credit_data.csv'
+Traceback (most recent call last):
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 34, in train_models
+    X, y = load_data('data/processed/credit_data.csv')
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 19, in load_data
+    df = pd.read_csv(filepath)
+  File "C:\Users\ACER\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\ACER\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\ACER\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ACER\anaconda3\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/credit_data.csv'
+2026-02-14 01:33:37,561 - __main__ - INFO - Starting model training pipeline...
+2026-02-14 01:33:37,562 - __main__ - INFO - Loading data from data/processed/credit_data.csv...
+2026-02-14 01:33:37,564 - __main__ - ERROR - Data file not found at data/processed/credit_data.csv. Please ensure the data is downloaded and processed.
+2026-02-14 01:33:37,564 - __main__ - CRITICAL - Training pipeline failed: [Errno 2] No such file or directory: 'data/processed/credit_data.csv'
+Traceback (most recent call last):
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 34, in train_models
+    X, y = load_data('data/processed/credit_data.csv')
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 19, in load_data
+    df = pd.read_csv(filepath)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/credit_data.csv'
+2026-02-14 01:35:31,835 - __main__ - INFO - Starting model training pipeline...
+2026-02-14 01:35:31,835 - __main__ - INFO - Loading data from C:\Projects\CreditDefaultRiskPredictor\dataaw_csv\default_of_credit_card_clients.csv...
+2026-02-14 01:35:31,836 - __main__ - ERROR - Error loading data: [Errno 22] Invalid argument: 'C:\\Projects\\CreditDefaultRiskPredictor\\data\raw_csv\\default_of_credit_card_clients.csv'
+Traceback (most recent call last):
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 19, in load_data
+    df = pd.read_csv(filepath)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+OSError: [Errno 22] Invalid argument: 'C:\\Projects\\CreditDefaultRiskPredictor\\data\raw_csv\\default_of_credit_card_clients.csv'
+2026-02-14 01:35:31,838 - __main__ - CRITICAL - Training pipeline failed: [Errno 22] Invalid argument: 'C:\\Projects\\CreditDefaultRiskPredictor\\data\raw_csv\\default_of_credit_card_clients.csv'
+Traceback (most recent call last):
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 34, in train_models
+    X, y = load_data('C:\Projects\CreditDefaultRiskPredictor\data\raw_csv\default_of_credit_card_clients.csv')
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 19, in load_data
+    df = pd.read_csv(filepath)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+OSError: [Errno 22] Invalid argument: 'C:\\Projects\\CreditDefaultRiskPredictor\\data\raw_csv\\default_of_credit_card_clients.csv'
+2026-02-14 01:36:23,638 - __main__ - INFO - Starting model training pipeline...
+2026-02-14 01:36:23,639 - __main__ - INFO - Loading data from dataaw_csv\default_of_credit_card_clients.csv...
+2026-02-14 01:36:23,639 - __main__ - ERROR - Error loading data: [Errno 22] Invalid argument: 'data\raw_csv\\default_of_credit_card_clients.csv'
+Traceback (most recent call last):
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 19, in load_data
+    df = pd.read_csv(filepath)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+OSError: [Errno 22] Invalid argument: 'data\raw_csv\\default_of_credit_card_clients.csv'
+2026-02-14 01:36:23,641 - __main__ - CRITICAL - Training pipeline failed: [Errno 22] Invalid argument: 'data\raw_csv\\default_of_credit_card_clients.csv'
+Traceback (most recent call last):
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 34, in train_models
+    X, y = load_data('data\raw_csv\default_of_credit_card_clients.csv')
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 19, in load_data
+    df = pd.read_csv(filepath)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+OSError: [Errno 22] Invalid argument: 'data\raw_csv\\default_of_credit_card_clients.csv'
+2026-02-14 01:40:01,680 - __main__ - INFO - Starting model training pipeline...
+2026-02-14 01:40:01,680 - __main__ - INFO - Loading data from data/default_of_credit_card_clients.csv...
+2026-02-14 01:40:01,681 - __main__ - ERROR - Data file not found at data/default_of_credit_card_clients.csv. Please ensure the data is downloaded and processed.
+2026-02-14 01:40:01,681 - __main__ - CRITICAL - Training pipeline failed: [Errno 2] No such file or directory: 'data/default_of_credit_card_clients.csv'
+Traceback (most recent call last):
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 34, in train_models
+    X, y = load_data('data/default_of_credit_card_clients.csv')
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\source\models\train.py", line 19, in load_data
+    df = pd.read_csv(filepath)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Projects\CreditDefaultRiskPredictor\ml3env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/default_of_credit_card_clients.csv'
+2026-02-14 01:40:59,412 - __main__ - INFO - Starting model training pipeline...
+2026-02-14 01:40:59,412 - __main__ - INFO - Loading data from data/raw_csv/default_of_credit_card_clients.csv...
+2026-02-14 01:40:59,503 - __main__ - INFO - Data loaded successfully. Shape: X=(30000, 23), y=(30000,)
+2026-02-14 01:40:59,503 - __main__ - INFO - Splitting data into train and test sets...
+2026-02-14 01:40:59,516 - source.features.preprocess - INFO - Building preprocessing pipeline...
+2026-02-14 01:40:59,517 - source.features.preprocess - INFO - Preprocessing pipeline successfully built.
+2026-02-14 01:40:59,517 - __main__ - INFO - Starting hyperparameter tuning...
+2026-02-14 01:40:59,517 - __main__ - INFO - Tuning LogisticRegression...
+2026-02-14 01:41:03,773 - __main__ - INFO - LogisticRegression Best ROC-AUC: 0.7713
+2026-02-14 01:41:03,773 - __main__ - INFO - Tuning RandomForest...
+2026-02-14 01:41:45,792 - __main__ - INFO - RandomForest Best ROC-AUC: 0.7784
+2026-02-14 01:41:45,792 - __main__ - INFO - Tuning XGBoost...
+2026-02-14 01:41:48,566 - __main__ - INFO - XGBoost Best ROC-AUC: 0.7808
+2026-02-14 01:41:48,568 - __main__ - INFO - Hyperparameter tuning complete. Best Model: XGBoost with ROC-AUC: 0.7808
+2026-02-14 01:41:48,568 - __main__ - INFO - Evaluating best model on test set...
+2026-02-14 01:41:48,613 - __main__ - INFO - Test Set ROC-AUC: 0.7773
+2026-02-14 01:41:48,624 - __main__ - INFO - 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.95      0.89      4673
+           1       0.66      0.36      0.46      1327
+
+    accuracy                           0.82      6000
+   macro avg       0.75      0.65      0.68      6000
+weighted avg       0.80      0.82      0.80      6000
+
+2026-02-14 01:41:48,625 - __main__ - INFO - Saving best model artifact...
+2026-02-14 01:41:48,633 - __main__ - INFO - Model successfully saved to models/best_model_pipeline.pkl
