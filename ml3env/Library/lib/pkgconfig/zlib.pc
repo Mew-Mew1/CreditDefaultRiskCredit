@@ -1,0 +1,13 @@
+prefix=C:/Projects/CreditDefaultRiskPredictor/ml3env/Library
+exec_prefix=C:/Projects/CreditDefaultRiskPredictor/ml3env/Library
+libdir=C:/Projects/CreditDefaultRiskPredictor/ml3env/Library/lib
+sharedlibdir=C:/Projects/CreditDefaultRiskPredictor/ml3env/Library/lib
+includedir=C:/Projects/CreditDefaultRiskPredictor/ml3env/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.3.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
