@@ -1,0 +1,93 @@
+# =========================
+# ML Project Specifics
+# =========================
+
+# Datasets (Never commit raw or processed data to version control)
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/README.md
+
+# Saved Models (Ignore large binary files)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.pb
+!models/.gitkeep
+!models/README.md
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# =========================
+# Python & Environments
+# =========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+ml3env/
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# =========================
+# Jupyter Notebooks
+# =========================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# =========================
+# Flask 
+# =========================
+instance/
+.webassets-cache
+
+# =========================
+# Testing & Coverage
+# =========================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# =========================
+# OS & IDE Settings
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
