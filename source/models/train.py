@@ -90,7 +90,10 @@ def train_models():
 
         logger.info("Saving best model artifact...")
         os.makedirs('models', exist_ok=True)
-        model_path = 'models/best_model_pipeline.pkl'
+        models_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'models')
+        os.makedirs(models_dir, exist_ok=True)
+
+        model_path = os.path.join(models_dir, 'best_model_pipeline.pkl')
         joblib.dump(best_model, model_path)
         logger.info(f"Model successfully saved to {model_path}")
 
